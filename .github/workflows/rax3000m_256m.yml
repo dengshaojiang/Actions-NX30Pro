@@ -146,7 +146,7 @@ jobs:
         body: |
           - 本项目是基于237源代码编译256m固件，它也是基于hanwckf/immortalwrt-mt798x分叉来的**适用于rax3000m_256m设备**
           - 使用NX30PRO的高功率设置，5G相比默认增加了2dbm（7981都是内置功放，功放没有区别，只是有的厂家默认功率低）
-          - 添加了第三方包添加了adguardhome、mosdns、openclash、docker
+          - 添加了第三方包：adguardhome、openclash、docker
           - 历史版本将自动保留在下方。
           - 默认IP：192.168.1.1
           - 默认账号：root

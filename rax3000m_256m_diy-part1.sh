@@ -36,8 +36,12 @@ rm -rf feeds/small/dae
 rm -rf feeds/small/daed
 rm -rf feeds/small/dns2socks-rust
 rm -rf feeds/kenzo/quickfile
+# 连带删除已删包对应的 luci 前端，避免编译出依赖缺失的残缺包
+rm -rf feeds/small/luci-app-clashoo
+rm -rf feeds/small/luci-app-daede
+rm -rf feeds/small/luci-app-momo
+rm -rf feeds/small/luci-app-nikki
 cp -R feeds/kenzo/luci-app-openclash feeds/luci/applications/
 git clone https://github.com/kongfl888/luci-app-adguardhome.git package/luci-app-adguardhome
-git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/lang/golang
-git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+git clone https://github.com/sbwml/packages_lang_golang feeds/packages/lang/golang
 git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
