@@ -1,4 +1,4 @@
-name: clean_cloud-build
+name: 66_clean_cloud-build
 
 on:
   repository_dispatch:
